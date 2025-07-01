@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333353 4.2333333"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="209.05988"
+       y="395.51868"
+       width="166.68288"
+       height="167.62457"
+       id="rect1" />
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g2"
+       transform="matrix(0.14033476,0,0,0.14033476,-14.9835,-17.036065)">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,65.903104,17.690436)"
+         id="text1"
+         style="font-size:96px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#e74c3c;fill-opacity:1;fill-rule:nonzero"><tspan
+           x="209.06055"
+           y="482.86755"
+           id="tspan4"><tspan
+             style="font-weight:bold;font-family:Serif;-inkscape-font-specification:'Serif Bold'"
+             id="tspan3">P</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(-0.26458333,0,0,0.26458333,177.91595,17.690436)"
+         id="use1"
+         style="font-size:96px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#2ecc71;fill-opacity:1;fill-rule:nonzero"><tspan
+           x="209.06055"
+           y="482.86755"
+           id="tspan6"><tspan
+             style="font-weight:bold;font-family:Serif;-inkscape-font-specification:'Serif Bold'"
+             id="tspan5">P</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

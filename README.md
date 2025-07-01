@@ -1,8 +1,22 @@
-# Palindrome Checker  
+# 🔁 Palindrome Checker Web
 
-A simple tool to check if a word is spelled the same forwards and backwards.
+A simple web application that checks whether a word or phrase is a **palindrome** — a sequence that reads the same forwards and backwards.
 
-## Usage  
-```js
-const isPalindrome = require('./src/index');
-console.log(isPalindrome("racecar"));  // true
+## 🚀 Features
+
+- Determines if a text input is a palindrome
+- Ignores capitalization, spaces, and punctuation
+- Clean and intuitive interface for quick use
+
+## 💻 Technologies Used
+
+- HTML, CSS, JavaScript
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-user/palindrome-checker.git
+cd palindrome-checker
+npm install
+npm start
+```

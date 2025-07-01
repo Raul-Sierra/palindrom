@@ -1,0 +1,32 @@
+[33mcommit 244535ef82da976b60c04b7c614bcda3ba678fc8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Raul Sierra <rasiar1965@gmail.com>
+Date:   Tue Jul 1 19:57:08 2025 +0200
+
+    Add support for activating palindrome checking with the Enter key
+
+[33mcommit 25f269fae3b5fcedea88a07f131dbcb738a14144[m
+Author: Raul Sierra <rasiar1965@gmail.com>
+Date:   Tue Jul 1 19:23:11 2025 +0200
+
+    [200~feat: add palindrome checker functionality
+    
+    - Implement core palindrome detection logic
+    - Add input validation and error handling
+    - Display reversed text and result messages
+    - Include responsive styling for results
+
+[33mcommit 0bd31699aec703ed2eeb8e18a8e2530557c0f4d5[m
+Author: Raul Sierra <rasiar1965@gmail.com>
+Date:   Tue Jul 1 13:07:39 2025 +0200
+
+    style: fix input border overflow and improve responsive layout
+    
+    - Add box-sizing: border-box to fix input border overflow issue
+    - Adjust container padding for better mobile responsiveness
+    - Maintain serif typography while improving visual hierarchy
+
+[33mcommit 4cc7138dd3330df299734c2a739fb1890b99cc24[m
+Author: Raul Sierra <rasiar1965@gmail.com>
+Date:   Tue Jul 1 11:29:32 2025 +0200
+
+    feat: initialize palindrome checker project
