@@ -27,3 +27,9 @@ document.getElementById('checkButton').addEventListener('click', function () {
   }
   resultDiv.style.display = 'block';
 });
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    document.getElementById('checkButton').click();
+  }
+});
