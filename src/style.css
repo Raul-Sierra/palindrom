@@ -1,39 +1,112 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
   display: flex;
+  align-items: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.palindrome-checker {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 1rem;
 }
+
+h1{
+  color:#2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.input-group {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+  margin: 2rem 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: Georgia, serif;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fff; /* Assegura fons blanc */
+}
+
+input:focus{
+  border-color: #3498db;
+  outline: none;
+}
+
+button{
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: background-color 0.3s;
+}
+
+button:hover{
+  background-color: #2980b9;
+}
+
+.result{
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+.palindrome{
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.not-palindrome{
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.reverser-word{
+  margin-top: 15px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+
+
 
 #app {
   max-width: 1280px;
@@ -42,55 +115,3 @@ h1 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
