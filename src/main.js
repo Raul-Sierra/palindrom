@@ -1,18 +1,29 @@
-import './style.css'
+document.getElementById('checkButton').addEventListener('click', function () {
+  const input = document.getElementById('inputWord').value.trim();
+  const resultDiv = document.getElementById('result');
+  const reversedDiv = document.getElementById('reversedWord');
 
-import viteLogo from '/vite.svg'
+  if (!input) {
+    resultDiv.textContent = 'Si us plau, introduiu text.';
+    resultDiv.className = 'result not-palindrome';
+    resultDiv.style.display = 'block';
+    reversedDiv.textContent = '';
+    return;
+  }
 
+  const cleanedInput = input
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9à-èì-òùá-éí-óúýâ-êî-ôûãñõä-ëï-öüÿç]/g, '');
+  const reversed = cleanedInput.split('').reverse().join('');
 
-document.querySelector('#app').innerHTML = `
-  <div class="palindrome-checker">
-    <h1>Comprovador de Palindroms</h1>
-    <p>Introdueix una paraula o frase per comprovar si és un palindrom</p>
-  <div class="input-group">
-    <input type="text" id="inputWord" placeholder="Ex: 'Anna', 'Dábale arroz...'">
-    <button onclick="checkPalindrome()">Comprovar</button>
-  </div>
-    <div id="result" class="result"></div>
-    <div id="reversedWord" class="reversed-word" ></div>
-    
-  </div>
-`
+  reversedDiv.textContent = `${reversed}`;
+
+  if (cleanedInput === reversed) {
+    resultDiv.textContent = 'És un palindrom';
+    resultDiv.className = 'result palindrome';
+  } else {
+    resultDiv.textContent = 'No és un palindrome';
+    resultDiv.className = 'result not-palindrome';
+  }
+  resultDiv.style.display = 'block';
+});

@@ -1,13 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Palindrom</title>
   </head>
+
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <h1>Comprovador de Palindroms</h1>
+      <p>Introdueix una paraula o frase per comprovar si és un palindrom</p>
+      <div class="input-group">
+        <input
+          type="text"
+          id="inputWord"
+          placeholder="Introdueix una paraula o frase" />
+        <button id="checkButton">Comprovar</button>
+      </div>
+      <div id="result" class="result"></div>
+      <div id="reversedWord" class="reversed-word"></div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
