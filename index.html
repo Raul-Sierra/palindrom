@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palindrom</title>
+    <meta
+      name="description"
+      content="Eina gratuïta per analitzar si una paraula o frase és un palíndrom. Comprova si el teu text es llegeix igual endavant i enrere." />
+    <meta
+      name="keywords"
+      content="palíndrom, analitzador palíndrom, comprovar palíndrom, joc de paraules, frases capicua, català" />
+    <meta name="author" content="El teu nom o marca" />
+    <!-- Open Graph / Xarxes Socials -->
+    <meta property="og:title" content="Analitzador de Palíndroms Online" />
+    <meta
+      property="og:description"
+      content="Descobreix si les teves paraules o frases són palíndroms amb la nostra eina gratuïta" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.exemple.com" />
+    <meta
+      property="og:image"
+      content="https://www.exemple.com/images/logo-palindroms.png" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.exemple.com" />
+    <title>Analitzador de Palíndroms | Comprova paraules i frases</title>
   </head>
 
   <body>
@@ -22,6 +41,17 @@
       <div id="result" class="result"></div>
       <div id="reversedWord" class="reversed-word"></div>
     </div>
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Analitzador de Palíndroms",
+        "description": "Eina per verificar si un text és palíndrom",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web"
+      }
+    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

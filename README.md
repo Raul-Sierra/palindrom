@@ -15,8 +15,6 @@ A simple web application that checks whether a word or phrase is a **palindrome*
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-user/palindrome-checker.git
-cd palindrome-checker
 npm install
 npm start
 ```
